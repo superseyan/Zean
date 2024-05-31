@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+            .top-buttons {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            padding: 0;
+            margin-top: 30px;
+        }
+        .top-buttons li {
+            margin: 0 15px;
+            padding: 3px 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .top-buttons li:hover {
+            background-color: rgba(25, 128, 255, 0.485);
+            transform: scale(1.1);
+        }
+
+        .top-buttons a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+    </style>
+     <ul class="top-buttons">
+        <li><a href="index.html">Home</a></li>
+    </ul>
+<form method="get" action="submit.php">
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId" name="studentId" required><br>
+    <label for="email">Email: </label>
+    <input type="text" id="email" name="email" required><br><br>
+    <h2>FULL NAME</h2>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required><br>
+    <label for="givenname">Given Name:</label>
+    <input type="text" id="givenname" name="givenname" required><br>
+    <label for="middlename">Middle Name</label>
+    <input type="text" id="middlename" name="middlename" required><br><br>
+    <h2>Other INFO</h2>
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required><br>
+    <label for="yrlvlcs">YEAR LEVEL and COURSE:</label>
+    <input type="text" id="yrlvlcs" name="yrlvlcs" required><br>
+    <label for="section">SECTION:</label>
+    <input type="text" id="section" name="section" required><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
